@@ -7,4 +7,5 @@ while echo $var1
 do
 	echo "This is inside the loop"
 	var1=$[ $var1 - 1 ]
+	echo
 done

@@ -1,0 +1,5 @@
+#text for temp2.sh
+
+person1:22:man:980215:123345123
+person2:34:woman:884922:987345678
+person3:23:man:333211:987789678

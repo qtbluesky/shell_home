@@ -1,7 +1,7 @@
 #!/bin/bash
 #another example of how not to use the for command
 
-for test in I don\'t know if "this'll" work
+for test in Nevada New Hampshire New Mexico New York North Carolina
 do
-	echo "word:$test"
+	echo "Now going to $test"
 done

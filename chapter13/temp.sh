@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#IFS.OLD=IFS
+#IFS='&'
+
+STRING1="111&222&333&444"
+echo $STRING1
+echo "$STRING1"
+
+
+
+STRING2="111	222		333			444"
+echo $STRING2
+echo "$STRING2"
