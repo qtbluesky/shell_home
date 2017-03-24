@@ -1,2 +1,2 @@
-# shell_home
-shell_home
+# shell_scripts_training
+
