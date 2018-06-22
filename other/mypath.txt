@@ -1,0 +1,6 @@
+DIR: /root/bin got total 0 files.
+DIR: /usr/local/sbin got total 0 files.
+DIR: /usr/local/bin got total 0 files.
+DIR: /usr/sbin got total 449 files.
+DIR: /usr/bin got total 755 files.
+DIR: /root/bin got total 0 files.
