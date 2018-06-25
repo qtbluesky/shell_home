@@ -2,7 +2,7 @@
 
 DATE=$(date +%y%m%d)
 FILE=archive$DATE.tar.gz
-CONFIG_FILE=/root/code/shell_scripts/Files_To_Backup
+CONFIG_FILE=/root/code/shell_scripts_training/chapter_24_archive/Files_To_Backup
 DESTINATION=/root/code/shell_scripts/archive/$FILE
 
 if [ -f $CONFIG_FILE ]
@@ -20,11 +20,15 @@ FILE_NO=1
 exec < $CONFIG_FILE
 read FILE_NAME
 
+
+list_count=1	#debug
 while [ $? -eq 0 ]
 do
 	if [ -f $FILE_NAME -o -d $FILE_NAME ]
 	then
 		FILE_LIST="$FILE_LIST $FILE_NAME"
+		echo "$list_count: $FILE_LIST"		#debug
+		list_count=$[ $list_count + 1 ]		#debug
 	else
 		echo
 		echo "$FILE_NAME, does not exist."
@@ -47,5 +51,9 @@ tar -czf $DESTINATION $FILE_LIST
 echo "Archive completed"
 echo "Resulting archive file is: $DESTINATION"
 echo
+
+echo "==============="	#debug
+echo "$FILE_LIST"		#debug
+echo "==============="	#debug
 
 exit
